@@ -3,8 +3,8 @@ from employee import Employee
 
 class Programmer(Employee):
     """class that inherits from class Empliyee"""
-    def __init__(self, name, surname, email, phone_number, salary, tech_stack,
-                 closed_this_monht):
+    def __init__(self, name, surname, email, phone_number,
+                 salary, tech_stack, closed_this_monht):
         super().__init__(name, surname, email, phone_number, salary)
         self.tech_stack = tech_stack
         self.closed_this_monht = closed_this_monht
@@ -43,8 +43,8 @@ class Programmer(Employee):
 
 class Recruiter(Employee):
     """class that inherits from class Empliyee"""
-    def __init__(self, name, surname, email, phone_number, salary,
-                 hired_this_monht):
+    def __init__(self, name, surname, email, phone_number,
+                 salary, hired_this_monht):
         super().__init__(name, surname, email, phone_number, salary)
         self.hired_this_monht = hired_this_monht
 
