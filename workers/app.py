@@ -5,12 +5,10 @@ from candidate import Candidate
 from vacancy import Vacancy
 
 if __name__ == '__main__':
-    programmer_1 = Programmer('Marina', 'Zhidkova', 'mzh@gmail.com',
-                              '066xxxxxxx', 22,
-                              ['python', 'C++', 'Ruby', 'C'], 3)
-    programmer_2 = Programmer('Vlad', 'Zhidkov', 'vzh@gmail.com',
-                              '066xxxxxxx', 23,
-                              ['python', 'C++', 'Java'], 2)
+    programmer_1 = Programmer('Marina', 'Zhidkova', 'mzh@gmail.com', '066xxxxxxx',
+                              22, ['python', 'C++', 'Ruby', 'C'], 3)
+    programmer_2 = Programmer('Vlad', 'Zhidkov', 'vzh@gmail.com', '066xxxxxxx',
+                              23, ['python', 'C++', 'Java'], 2)
     rectuiter_1 = Recruiter('Yasha', 'Kulbaka', 'yak@gmail.com',
                             '099xxxxxxx', 19, 2)
     candidate_1 = Candidate('Alesya Lunyova', 'alun@gmail.com',
