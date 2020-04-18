@@ -19,7 +19,7 @@ class Employee(object):
     for day in range(diff):
         if(month_start + timedelta(day)).weekday() not in weekend:
             day_count += 1
-
+   
     def work(self):
         """returns a string 'I come to the office.'"""
         return 'I come to the office.'

@@ -1,5 +1,5 @@
 """module that holds classes Programmer and Rectuiter"""
-from employee import Employee
+from .employee import Employee
 
 class Programmer(Employee):
     """class that inherits from class Empliyee"""
