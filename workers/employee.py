@@ -28,25 +28,31 @@ class Employee(object):
         """salary calculation method depending on the number
     of working days or current salary from the beginning
     of the month"""
-        return '%s $' %(self.salary * days)
+        return self.salary * days
 
     def __lt__(self, other):
-        return 'LT: %s' %(self.salary < other.salary)
+        print('LT')
+        return self.salary < other.salary 
 
     def __gt__(self, other):
-        return 'GT: %s' %(self.salary > other.salary)
-
+        print('GT')
+        return self.salary > other.salary
+        
     def __eq__(self, other):
-        return 'EQ: %s' %(self.salary == other.salary)
+        print('EQ')
+        return self.salary == other.salary
 
     def __le__(self, other):
-        return 'LE: %s' %(self.salary <= other.salary)
+        print('LE')
+        return self.salary <= other.salary
 
     def __ge__(self, other):
-        return 'GE: %s' %(self.salary >= other.salary)
+        print('GE')
+        return self.salary >= other.salary
 
     def __ne__(self, other):
-        return 'NE: %s' %(self.salary != other.salary)
+        print('NE')
+        return self.salary != other.salary
 
     def __str__(self):
         return '%s: %s %s' %(self.__class__.__name__, self.name, self.surname)
