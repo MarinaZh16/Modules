@@ -27,7 +27,6 @@ class Employee(object):
     for day in range(diff):
         if(month_start + timedelta(day)).weekday() not in weekend:
             day_count += 1
-    
 
     def save_email(self):
         with open('email.txt', 'a') as f:
@@ -40,7 +39,7 @@ class Employee(object):
                 if self.email in line:
                     #print(self.email, 'such email allready exsists')
                     raise ValueError('such email allready exsists')            
-                
+
     def work(self):
         """returns a string 'I come to the office.'"""
         return 'I come to the office.'
