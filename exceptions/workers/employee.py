@@ -36,7 +36,7 @@ class Employee(object):
     def validate_email(self):
         with open('email.txt', 'r') as f:
             for line in f:
-                if self.email in line:
+                if self.email+'\n' == line:
                     #print(self.email, 'such email allready exsists')
                     raise ValueError('such email allready exsists')            
 
