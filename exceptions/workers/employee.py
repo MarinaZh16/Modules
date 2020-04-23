@@ -15,18 +15,6 @@ class Employee(object):
             print('email.txt file was not found.  '
                   'No validation provided')
         self.save_email()
-        
-    """here is a miscalculation of the number of working days
-    from the beginning of the current month to the present"""
-    from datetime import date, timedelta
-    now = date.today()
-    month_start = date(now.year, now.month, 1)
-    weekend = [5, 6]
-    diff = (now - month_start).days + 1
-    day_count = 0
-    for day in range(diff):
-        if(month_start + timedelta(day)).weekday() not in weekend:
-            day_count += 1
 
     def save_email(self):
         with open('email.txt', 'a') as f:
@@ -44,10 +32,27 @@ class Employee(object):
         """returns a string 'I come to the office.'"""
         return 'I come to the office.'
 
-    def check_salary(self, days=day_count):
+    @staticmethod
+    def get_workdays():
+        """here is a miscalculation of the number of working days
+            from the beginning of the current month to the present"""
+        from datetime import date, timedelta
+        now = date.today()
+        month_start = date(now.year, now.month, 1)
+        weekend = [5, 6]
+        diff = (now - month_start).days + 1
+        day_count = 0
+        for day in range(diff):
+            if (month_start + timedelta(day)).weekday() not in weekend:
+                day_count += 1
+        return day_count
+
+    def check_salary(self, days=0):
         """salary calculation method depending on the number
     of working days or current salary from the beginning
     of the month"""
+        if not days:
+            return self.salary * self.get_workdays()
         return self.salary * days
 
     def __lt__(self, other):
@@ -76,3 +81,10 @@ class Employee(object):
 
     def __str__(self):
         return '%s: %s %s' %(self.__class__.__name__, self.name, self.surname)
+
+    def as_str(self):
+        return self.info
+
+    @property
+    def info(self):
+        return '%s, %s %s, %s' % (self.__class__.__name__, self.name, self.surname, self.get_workdays())

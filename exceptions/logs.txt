@@ -1,120 +1,157 @@
-2020-04-19 03:08:01.365356    UnableToWorkException:
+2020-04-23 02:19:05.352327    UnableToWorkException:
  Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 36, in <module>
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
     main()
-  File "/home/user/git/proccess/app.py", line 29, in main
-    print(c_3.work())
-  File "/home/user/git/proccess/workers/candidate.py", line 13, in work
-    raise UnableToWorkException('I’m not hired yet, lol.')
-workers.candidate.UnableToWorkException: I’m not hired yet, lol.
-
-
-2020-04-19 03:10:47.966423    UnableToWorkException:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 36, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 29, in main
-    print(c_3.work())
-  File "/home/user/git/proccess/workers/candidate.py", line 13, in work
-    raise UnableToWorkException('I’m not hired yet, lol.')
-workers.candidate.UnableToWorkException: I’m not hired yet, lol.
-
-
-2020-04-19 03:11:25.939897    ValueError:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 36, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 16, in main
-    '099xxxxxxx', 19, 2)
-  File "/home/user/git/proccess/workers/progr_recr.py", line 54, in __init__
-    super().__init__(name, surname, email, phone_number, salary)
-  File "/home/user/git/proccess/workers/employee.py", line 13, in __init__
-    self.validate_email()
-  File "/home/user/git/proccess/workers/employee.py", line 42, in validate_email
-    raise ValueError('such email allready exsists')
-ValueError: such email allready exsists
-
-
-2020-04-19 03:12:20.214962    ValueError:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 36, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 16, in main
-    '099xxxxxxx', 19, 2)
-  File "/home/user/git/proccess/workers/progr_recr.py", line 54, in __init__
-    super().__init__(name, surname, email, phone_number, salary)
-  File "/home/user/git/proccess/workers/employee.py", line 13, in __init__
-    self.validate_email()
-  File "/home/user/git/proccess/workers/employee.py", line 42, in validate_email
-    raise ValueError('such email allready exsists')
-ValueError: such email allready exsists
-
-
-2020-04-19 03:13:07.610323    ValueError:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 36, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 16, in main
-    '099xxxxxxx', 19, 2)
-  File "/home/user/git/proccess/workers/progr_recr.py", line 54, in __init__
-    super().__init__(name, surname, email, phone_number, salary)
-  File "/home/user/git/proccess/workers/employee.py", line 13, in __init__
-    self.validate_email()
-  File "/home/user/git/proccess/workers/employee.py", line 42, in validate_email
-    raise ValueError('such email allready exsists')
-ValueError: such email allready exsists
-
-
-2020-04-19 03:13:26.763425    UnableToWorkException:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 36, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 29, in main
-    print(c_3.work())
-  File "/home/user/git/proccess/workers/candidate.py", line 13, in work
-    raise UnableToWorkException('I’m not hired yet, lol.')
-workers.candidate.UnableToWorkException: I’m not hired yet, lol.
-
-
-2020-04-19 03:16:29.850873    NameError:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 37, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 27, in main
-    print(p_.check_salary(100))
-NameError: name 'p_' is not defined
-
-
-2020-04-19 03:22:48.445268    UnableToWorkException:
- Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 37, in <module>
-    main()
-  File "/home/user/git/proccess/app.py", line 30, in main
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
     print(c_3.work())                   #ошибка
-  File "/home/user/git/proccess/workers/candidate.py", line 13, in work
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
     raise UnableToWorkException('I’m not hired yet, lol.')
 workers.candidate.UnableToWorkException: I’m not hired yet, lol.
 
 
-2020-04-19 03:24:42.761048    UnableToWorkException:
+2020-04-23 02:23:50.031946    UnableToWorkException:
  Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 37, in <module>
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
     main()
-  File "/home/user/git/proccess/app.py", line 30, in main
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
     print(c_3.work())                   #ошибка
-  File "/home/user/git/proccess/workers/candidate.py", line 13, in work
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException('I’m not hired yet, lol.')
+workers.candidate.UnableToWorkException: I’m not hired yet, lol.
+
+
+2020-04-23 02:25:09.480489    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException('I’m not hired yet, lol.')
+workers.candidate.UnableToWorkException: I’m not hired yet, lol.
+
+
+2020-04-23 02:26:42.765516    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException('I’m not hired yet, lol.')
+workers.candidate.UnableToWorkException: I’m not hired yet, lol.
+
+
+2020-04-23 02:27:03.651004    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException('I’m not hired yet, lol.')
+workers.candidate.UnableToWorkException: I’m not hired yet, lol.
+
+
+2020-04-23 02:28:32.442528    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
     raise UnableToWorkException
 workers.candidate.UnableToWorkException
 
 
-2020-04-19 03:25:50.334722    UnableToWorkException:
+2020-04-23 02:29:00.521950    NameError:
  Traceback (most recent call last):
-  File "/home/user/git/proccess/app.py", line 37, in <module>
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
     main()
-  File "/home/user/git/proccess/app.py", line 30, in main
+  File "/home/user/git/modules/exceptions/app.py", line 27, in main
+    print(p_3.check_salary(100))        #ошибка
+NameError: name 'p_3' is not defined
+
+
+2020-04-23 02:30:03.908735    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
     print(c_3.work())                   #ошибка
-  File "/home/user/git/proccess/workers/candidate.py", line 13, in work
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException
+workers.candidate.UnableToWorkException
+
+
+2020-04-23 02:30:18.763601    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException
+workers.candidate.UnableToWorkException
+
+
+2020-04-23 02:30:56.059375    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
     raise UnableToWorkException('I’m not hired yet, lol.')
 workers.candidate.UnableToWorkException: I’m not hired yet, lol.
+
+
+2020-04-23 02:39:23.075995    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException
+workers.candidate.UnableToWorkException
+
+
+2020-04-23 02:39:59.156165    UnableToWorkException:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 36, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 30, in main
+    print(c_3.work())                   #ошибка
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 14, in work
+    raise UnableToWorkException
+workers.candidate.UnableToWorkException
+
+
+2020-04-23 19:42:00.680404    AttributeError:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 40, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 26, in main
+    c_1.work()
+AttributeError: 'Candidate' object has no attribute 'work'
+
+
+2020-04-23 19:49:09.546364    NameError:
+ Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 27, in main
+    c_1.work()
+  File "/home/user/git/modules/exceptions/workers/candidate.py", line 13, in work
+    raise UnableToWorkException('I’m not hired yet, lol.')
+workers.candidate.UnableToWorkException: I’m not hired yet, lol.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/git/modules/exceptions/app.py", line 43, in <module>
+    main()
+  File "/home/user/git/modules/exceptions/app.py", line 28, in main
+    except UnableToWorkException:
+NameError: name 'UnableToWorkException' is not defined
 
 

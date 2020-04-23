@@ -12,5 +12,7 @@ class Candidate(object):
     def work(self):
         raise UnableToWorkException('I’m not hired yet, lol.')
 
+
 class UnableToWorkException(Exception):
     pass
+

@@ -4,7 +4,7 @@ import datetime
 import sys,traceback
 from workers.progr_recr import Programmer, Recruiter
 from workers.employee import Employee
-from workers.candidate import Candidate
+from workers.candidate import *
 from workers.vacancy import Vacancy
 
 def main():
@@ -22,17 +22,23 @@ def main():
                             ['C++', 'PHP', 'Java'], 'C++', 'middle')
     v_1 = Vacancy('Full-Stack Developer', 'PHP', 'middle')
     v_2 = Vacancy('C++ Developer', 'C++', 'middle')
+    # try:
+    try:
+        c_1.work()
+    except UnableToWorkException:
+        print('I’m not hired yet, lol.')
     print(str(p_1))
     print(r_1.check_salary())
     print(p_2.check_salary(100))
-    #print(p_3.check_salary(100))        #ошибка
+    #print(p_3.check_salary(100))        
     print(p_1 > p_2)
-    print(c_3.work())                   #ошибка
+    print(p_1.info)
+    #print(c_3.work())                  
     
 
 if __name__ == '__main__':
     file=open('email.txt', 'w')
-    file.close
+    file.close()
     try:
         main()
     except Exception as err:
