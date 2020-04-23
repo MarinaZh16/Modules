@@ -22,7 +22,6 @@ def main():
                             ['C++', 'PHP', 'Java'], 'C++', 'middle')
     v_1 = Vacancy('Full-Stack Developer', 'PHP', 'middle')
     v_2 = Vacancy('C++ Developer', 'C++', 'middle')
-    # try:
     try:
         c_1.work()
     except UnableToWorkException:
