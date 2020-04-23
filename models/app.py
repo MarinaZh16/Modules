@@ -1,10 +1,10 @@
 """the module into which classes Employee, Programmer, Recruiter, Candidate
 and Vacancy are imported and instances of these classes are created"""
-
 from workers.progr_recr import Programmer, Recruiter
-from workers.employee import Employee
-from workers.candidate import Candidate
+from workers.candidate import *
 from workers.vacancy import Vacancy
+from workers import *
+
 
 def main():
     p_1 = Programmer('Marina', 'Zhidkova', 'mzh@gmail.com', '066xxxxxxx',
@@ -14,17 +14,22 @@ def main():
     r_1 = Recruiter('Yasha', 'Kulbaka', 'yak@gmail.com',
                             '099xxxxxxx', 19, 2)
     c_1 = Candidate('Alesya Lunyova', 'alun@gmail.com',
-                            ['Python', 'PHP'], 'Python', 'junior')
+                             ['Python', 'PHP'], 'Python', 'junior')
     c_2 = Candidate('Igor Samusenko', 'isam@gmail.com',
-                            ['Python', 'PHP', 'Java'], 'PHP', 'senior')
+                             ['Python', 'PHP', 'Java'], 'PHP', 'senior')
     c_3 = Candidate('Julia Sokolyk', 'jsok@gmail.com',
-                            ['C++', 'PHP', 'Java'], 'C++', 'middle')
+                             ['C++', 'PHP', 'Java'], 'C++', 'middle')
     v_1 = Vacancy('Full-Stack Developer', 'PHP', 'middle')
     v_2 = Vacancy('C++ Developer', 'C++', 'middle')
+    list_ = Candidate.from_csv('fp.csv')
+    c_4=(list_[1])
     print(str(p_1))
     print(r_1.check_salary())
     print(p_1 > p_2)
     print(p_1.info)
+    print(c_1.info)
+    print(c_4.info)
+
 
     
 if __name__ == '__main__':
