@@ -1,5 +1,6 @@
 """the module into which classes Employee, Programmer, Recruiter, Candidate
 and Vacancy are imported and instances of these classes are created"""
+
 from workers.progr_recr import Programmer, Recruiter
 from workers.employee import Employee
 from workers.candidate import Candidate
@@ -23,6 +24,7 @@ def main():
     print(str(p_1))
     print(r_1.check_salary())
     print(p_1 > p_2)
+    print(p_1.info)
 
     
 if __name__ == '__main__':
