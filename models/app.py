@@ -1,9 +1,9 @@
 """the module into which classes Employee, Programmer, Recruiter, Candidate
 and Vacancy are imported and instances of these classes are created"""
 from workers.progr_recr import Programmer, Recruiter
-from workers.candidate import *
+from workers.candidate import Candidate
 from workers.vacancy import Vacancy
-from workers import *
+
 
 
 def main():
